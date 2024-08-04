@@ -3,7 +3,7 @@
 <head>
     <title>Calculator</title>
     <style>
-        .calculator-container{
+        .calculator-body{
             background-color: dimgrey;
             height: 300px;
             width: 200px;
@@ -20,21 +20,52 @@
             display: block;
             margin:0 auto;
             color: black;
+            margin-bottom: 15px;
+        }
+        .btn{
+            padding: 3px 0;
+            text-align: center;
+            width:30px;
+            font-size: 20px;
+        }
+        .button-container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            height: 300px;
+            flex-direction: column;
+        }
+        .button-color{
+            background-color: #80b3ff;
+        }
+        .bg-button{
+            height: 90px;
+            background-color:crimson;
+        }
+        .button1{
+            cursor: pointer;
+            border: 1px solid black;
+            width:50px;
+            text-align: center;
+            font-size: 25px;
+            padding: 3px;
+            margin: 10px;
+            border-radius: 18px;
         }
     </style>
 </head>
 <body>
     <h1>Calculator</h1>
-    <div class="calculator-container">
+    <div class="calculator-body">
         <input type="text" value="0" class="screen"/>
         <div>
 
         </div class="btn-container">
-        <button>Ac</button>
-        <button>7</button>
-        <button>4</button>
-        <button>1</button>
-        <button>0</button>
+        <button class="btn">Ac</button>
+        <button class="btn">7</button>
+        <button class="btn">4</button>
+        <button class="btn">1</button>
+        <button class="btn">0</button>
     </div>
 </body>
 </html>
